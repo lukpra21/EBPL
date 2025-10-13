@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AGB | Entsorgungsberatung Lukas Pratter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">EDM</div>
+      <nav>
+        <div class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="agb.html">AGB</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="card">
+      <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
+      <p>Unsere Beratungsleistungen erfolgen auf Grundlage der Allgemeinen Geschäftsbedingungen für Unternehmensberater. Diese regeln unter anderem Leistungsumfang, Vergütung, Haftung und Vertraulichkeit.</p>
+      <p>Die vollständigen AGB erhalten Sie auf Anfrage oder im Rahmen unseres Vertragsabschlusses.</p>
+    </section>
+
+    <footer class="card small">
+      <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="agb.html">AGB</a><br>
+      © <span id="year"></span> Entsorgungsberatung Lukas Pratter
+    </footer>
+  </div>
+  <script>
+    document.getElementById("year").textContent=new Date().getFullYear();
+    function toggleMenu(){document.getElementById("navLinks").classList.toggle("open");}
+  </script>
+</body>
+</html>
