@@ -1,256 +1,160 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Abfallberatung & EDM-Aufzeichnung | Entsorgungsberatung Lukas Pratter</title>
-  <meta name="description" content="Fachkundige Abfallberatung und digitale Aufzeichnung (EDM). Unterstützung bei Registrierung, digitalen Transportdokumenten, Audit-Readiness und Schnittstellen." />
-  <meta name="keywords" content="Abfallberatung, EDM, Elektronisches Datenmanagement, Abfallaufzeichnung, Abfallbilanz, Abfallregister" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EBPL - Entsorgungsberatung, Abbruch, Entsorgung und Vermittlung</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- OpenGraph -->
-  <meta property="og:title" content="Abfallberatung & EDM-Aufzeichnung | Entsorgungsberatung Lukas Pratter" />
-  <meta property="og:description" content="Digitale Aufzeichnungslösungen für Abfallwirtschaft: rechtskonform, nachvollziehbar, auditbereit." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.ebpl.at/social-preview.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <link rel="icon" href="favicon.png" type="image/png" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#C5A059'
+          }
+        }
+      }
+    }
+  </script>
 
   <style>
-    :root {
-      --maxw: 1200px;
-      --accent: #0b6fb6;
-      --muted: #6b7280;
-      --radius: 10px;
-      --glass: rgba(255, 255, 255, 0.06);
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; color: #0b1720; background: #f6f8fb; line-height: 1.5; }
-    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 24px; }
-
-    header { padding: 18px 0; display: flex; align-items: center; justify-content: space-between; }
-    .brand { display: flex; gap: 12px; align-items: center; }
-    .logo { width: 52px; height: 52px; border-radius: 8px; background: linear-gradient(135deg, var(--accent), #0b9bd6); display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; }
-    nav a { margin-left: 18px; text-decoration: none; color: var(--muted); }
-
-    .hero { display: grid; grid-template-columns: 1fr 420px; gap: 32px; align-items: center; padding: 48px 0; }
-    .hero h1 { font-size: 2.1rem; margin: 0 0 12px; }
-    .hero p { color: var(--muted); margin: 0 0 20px; }
-    .cta { display: inline-block; background: var(--accent); color: white; padding: 12px 18px; border-radius: 8px; text-decoration: none; }
-
-    .card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 6px 20px rgba(10,20,30,0.06); }
-    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
-    .feature { padding: 14px; border-radius: 10px; background: linear-gradient(180deg, #fff, #fbfdff); border: 1px solid #eef3f8; }
-
-    section { padding: 36px 0; }
-    h2 { margin-top: 0; }
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-    footer { padding: 24px 0; color: var(--muted); font-size: 0.9rem; }
-
-    @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; padding: 28px 0; }
-      .features { grid-template-columns: repeat(2, 1fr); }
-      .grid-2 { grid-template-columns: 1fr; }
-      nav a { display: none; }
-    }
-    @media (max-width: 520px) {
-      .features { grid-template-columns: 1fr; }
+    @font-face {
+      font-family: 'MinionVariableConcept';
+      src: url('MinionVariableConcept.woff2') format('woff2');
     }
 
-    form label { display: block; margin-bottom: 6px; font-weight: 600; color: #102026; }
-    input, textarea, select {
-      width: 100%; padding: 10px;
-      border: 1px solid #dbe7f0; border-radius: 8px; font-size: 0.95rem;
+    body {
+      font-family: 'MinionVariableConcept', serif;
     }
-    .row { display: flex; gap: 12px; }
-    .row > * { flex: 1; }
-    .muted { color: var(--muted); font-size: 0.95rem; }
-    .small { font-size: 0.9rem; color: var(--muted); }
   </style>
 </head>
 
-<body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <img src="logo.svg" alt="Logo Entsorgungsberatung Lukas Pratter" class="logo-img" height="60" width="auto" />
-        <div>
-          <strong>Entsorgungsberatung Lukas Pratter</strong><br />
-          <span class="small">Digitale Aufzeichnung • EDM • Compliance</span>
+<body class="bg-black text-white">
+
+  <!-- HERO -->
+  <section class="pt-32 pb-20 bg-black border-b border-gray-800">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+        Entsorgungsberatung
+      </h1>
+
+      <p class="text-lg text-gold mb-2 tracking-wide">
+        Pratter Lukas
+      </p>
+
+      <p class="text-xl text-gray-400 mb-6 tracking-wide">
+        Beratung und Vermittlung bei Abbruch und Entsorgung
+      </p>
+
+    </div>
+  </section>
+
+  <!-- LEISTUNGEN -->
+  <section id="leistungen" class="py-20 bg-black">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-black p-6 rounded-2xl border border-gray-700 hover:border-gold transition">
+          <h2 class="font-semibold text-xl mb-3">Abbruch</h2>
+          <p class="text-gray-400">Vermittlung und Organisation von&nbsp;</p>
+          <p class="text-gray-400">Abbrucharbeiten.</p>
+          <p class="text-gray-400">&nbsp;</p>
+          <p class="text-gray-400">Erstellung der Einreichunterlagen zum Erlangen einer&nbsp; Abbruchbewilligungen.</p>
+          <p class="text-gray-400">&nbsp;</p>
+          <p class="text-gray-400">Rückbaudokumentation</p>
+          <p class="text-gray-400">&nbsp;</p>
+          <p class="text-gray-400">Abfallnachweise&nbsp;</p>
         </div>
-      </div>
-      <nav aria-label="Hauptnavigation">
-        <a href="#leistungen">Leistungen</a>
-        <a href="#edm">EDM</a>
-        <a href="#loesungen">Lösungen</a>
-        <a href="#kontakt">Kontakt</a>
-      </nav>
-    </header>
 
-    <!-- HERO -->
-    <section class="hero" aria-labelledby="heroTitle">
-      <div>
-        <h1 id="heroTitle">Abfallrechtliche Hilfestellung <br>Entsorgungsvermittlungen</h1>
-        <p>Unternehmen werden bei der rechtskonformen und digitalen Erfassung von Abfalldaten (EDM) unterstützt – von der Registrierung über das Prozessdesign bis hin zur Integration in die behördliche Schnittstelle. Darüber hinaus erfolgt eine fachliche Beratung in den Bereichen Aufbereitung, Verfüllung, Deponierung und Abbruchleistungen.</p>
-        <a class="cta" href="#kontakt" role="button">Kostenlose Erstberatung anfragen</a>
+        <div class="bg-black p-6 rounded-2xl border border-gray-700 hover:border-gold transition">
+          <h2 class="font-semibold text-xl mb-3">Beratung</h2>
+		  <p class="text-gray-400">Entsorgung&nbsp;</p>
+			<p class="text-gray-400">&nbsp;</p>
+<p class="text-gray-400">EDM&nbsp;</p>
+          
+          <p class="text-gray-400">&nbsp;</p>
+          <p class="text-gray-400">Abfallbilanz&nbsp;</p>
+          <p class="text-gray-400">&nbsp;</p>
+          <p class="text-gray-400">Aufbereitung&nbsp;</p>
+          <p class="text-gray-400">&nbsp;</p>
+          <p class="text-gray-400">Deponierung</p>
+          <p class="text-gray-400">&nbsp;</p>
 
-        <div class="features">
-          <div class="feature">
-            <strong>Entsorgungsvermittlung</strong>
-            <div class="small">Wir finden den passenden Entsorgungspartner für Ihr Vorhaben in der Südsteiermark – schnell und zuverlässig.</div>
-          </div>
-          <div class="feature">
-            <strong>Abbruch/Rückbau</strong>
-            <div class="small">Der Weg zum Gebäudeabbruch kann mühsam sein – wir helfen von der Antragstellung bis zur Durchführung.</div>
-          </div>
-          <div class="feature">
-            <strong>Probleme bei der Abfallbilanz?</strong>
-            <div class="small">Hilfestellung via Fernwartung.</div>
-          </div>
         </div>
-      </div>
 
-      <div class="card">
-        <h3>Suchen Sie nicht nach dem passenden Entsorger für Ihr Vorhaben</h3>
-        <ol class="small">
-          <li>Standort registrieren (GLN / ZAReg)</li>
-          <li>Einträge erfassen (Datum, Menge, Abfallart)</li>
-          <li>Automatische Validierung & EDM-Übertragung</li>
-        </ol>
-        <p class="muted">Ideal für Abfallsammler, Behandler und größere Erzeuger.</p>
-        <p style="margin-top:12px"><a href="#kontakt">Jetzt anfragen →</a></p>
-      </div>
-    </section>
-
-    <!-- LEISTUNGEN -->
-    <section id="leistungen">
-      <div class="card">
-        <h2>Leistungen</h2>
-        <div class="grid-2">
-          <div>
-            <h3>Beratung & Audit</h3>
-            <p class="muted">Prüfung bestehender Aufzeichnungen, Gap-Analyse zur EDM-Konformität, Audit-Readiness.</p>
-            <ul>
-              <li>Erstprüfung & Maßnahmenplan</li>
-              <li>Dokumentationsrichtlinien</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Vermittlung von Abbruch- sowie Entsorgungspartner</h3>
-            <p class="muted">Wir finden für Sie die passenden Partner für Abbruch und Entsorgung – kompetent, regional und zuverlässig organisiert.</p>
-            <ul>
-              <li>Vermittlung geeigneter Partner für Gebäudeabbruch</li>
-              <li>Organisation passender Entsorgungsunternehmen in der Südsteiermark</li>
-            </ul>
-          </div>
+        <div class="bg-black p-6 rounded-2xl border border-gray-700 hover:border-gold transition">
+          <h2 class="font-semibold text-xl mb-3">Entsorgung</h2>
+          <p class="text-gray-400">Vermittlung und Organisation&nbsp; von</p>
+          <p class="text-gray-400">&nbsp;</p>
+          <p class="text-gray-400">Entrümpelungen&nbsp;</p>
+          <p class="text-gray-400">Containerdiensten</p>
+          <p class="text-gray-400">Abfallabholungen</p>
+          <p class="text-gray-400">&nbsp;</p>
+          <p class="text-gray-400">Wahl des richtigen Entsorgungspartner um Transportkosten und Übernahmekosten zu senken&nbsp;</p>
         </div>
-      </div>
-    </section>
 
-    <!-- EDM -->
-    <section id="edm">
-      <div class="card">
-        <h2>EDM & digitale Aufzeichnung</h2>
-        <p class="muted">EDM (Elektronisches Datenmanagement) ermöglicht zentrale, rechtskonforme Erfassung, Übermittlung und Speicherung von umweltbezogenen Daten. Wir unterstützen:</p>
-        <ul>
-          <li>Registrierung im EDM/ZAReg (Gliederung, GLN)</li>
-          <li>Erfüllung der Aufzeichnungspflicht</li>
-          <li>Abfallbilanzen</li>
-        </ul>
       </div>
-    </section>
 
-    <!-- Lösungen -->
-    <section id="loesungen">
-      <div class="card">
-        <h2>Lösungen & Features</h2>
-        <div class="grid-2">
-          <div>
-            <h3>Digitale Tools und Services vereinfachen den gesamten Entsorgungsprozess:</h3>
-            <ul>
-              <li>Smarte EDM-Datenverwaltung</li>
-              <li>Prozessautomatisierung &amp; Behördenintegration</li>
-              <li>Partnernetzwerk für Abbruch und Entsorgung</li>
-              <li>Transparente Dokumentation und Nachverfolgung</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Kontakt -->
-    <section id="kontakt">
-      <div class="card">
-        <h2>Kontakt & Erstberatung</h2>
-        <p class="muted">Schreibe uns kurz, welche Herausforderung du hast — wir melden uns mit einer Einschätzung und Terminvorschlag.</p>
-        <form id="contactForm" onsubmit="return submitForm()" aria-label="Kontaktformular">
-          <div class="row">
-            <div>
-              <label for="name">Name</label>
-              <input id="name" name="name" required aria-required="true" />
-            </div>
-            <div>
-              <label for="company">Firma</label>
-              <input id="company" name="company" />
-            </div>
-          </div>
-          <label for="email">E-Mail</label>
-          <input id="email" name="email" type="email" required aria-required="true" />
-          <label for="message">Nachricht / Anliegen</label>
-          <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
-          <p class="small">Mit dem Absenden bestätigst du, dass du unsere <a href="#datenschutz">Datenschutzerklärung</a> gelesen hast.</p>
-          <button type="submit" class="cta" style="border:none;cursor:pointer">Anfrage senden</button>
-          <p id="formStatus" class="muted" style="margin-top:10px"></p>
-        </form>
-      </div>
-    </section>
+  <!-- KONTAKT -->
+  <section id="kontakt" class="py-20 bg-black border-t border-gray-800">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Kontakt</h2>
 
-    <footer>
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
-          <div>
-            <strong>Entsorgungsberatung Lukas Pratter</strong><br>
-            Kirchberg 53, 8422 Sankt Nikolai ob Drassling<br>
-            <a href="mailto:LP@ebpl.at">LP@ebpl.at</a><br>
-            Tel: <a href="tel:+436705545232">+43 670 55 45 232</a>
-            <div class="small" style="margin-top:8px">
-              <a href="impressum.html">Impressum</a> ·
-              <a id="datenschutz" href="datenschutz.html">Datenschutz</a> ·
-              <a href="agb.html">AGB</a>
-              <p style="margin-top:8px">© <span id="year"></span> Lukas Pratter — Alle Rechte vorbehalten.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+      
+
+      <p class="text-gold text-lg mb-4">
+        Lukas Pratter
+      </p>
+
+      <p class="text-gray-400">
+        <a href="tel:+436705545232" class="block hover:text-white transition">+43 670 5545232</a>
+		  <br>
+        <a href="mailto:lp@ebpl.at" class="block hover:text-white transition">lp@ebpl.at</a>
+      </p>
+		<br>
+		<br>
+		<img src="Bild.png" alt="Lukas Pratter" class="w-full max-w-md mx-auto mb-6 rounded-2xl">
+
+    </div>
+  </section>
+
+  <!-- ÜBER -->
+  <section id="ueber" class="py-20 bg-black">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-gray-400">Über EBPL</h2>
+      <p class="text-gray-400 text-lg">
+        EBPL steht für professionelle Entsorgungsberatung und starke Partnernetzwerke in der Abfallwirtschaft.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-gray-500 py-8 text-center border-t border-gray-800">
+    <p class="mb-4">© 2026 EBPL - www.ebpl.at</p>
+    <div class="flex justify-center gap-6 text-sm">
+      <a href="agb.html" class="hover:text-white transition">AGB</a>
+      <a href="datenschutz.html" class="hover:text-white transition">Datenschutz</a>
+      <a href="impressum.html" class="hover:text-white transition">Impressum</a>
+    </div>
+  </footer>
+
+  <!-- LOGO FIXIERT -->
+  <div class="fixed z-20" style="left:0%; top:20%;">
+    <div class="bg-black p-4">
+      <img src="logo.svg" alt="EBPL Logo" class="w-[25vw] max-w-[180px] h-auto">
+    </div>
   </div>
+	
+	<a href="tel:+436705545232"
+ class="fixed bottom-4 right-4 bg-gold text-black px-5 py-3 rounded-full shadow-lg md:hidden">
+  Anrufen
+</a>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    function submitForm() {
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      if (!name || !email || !message) {
-        document.getElementById('formStatus').textContent = 'Bitte alle Pflichtfelder ausfüllen.';
-        return false;
-      }
-
-      const subject = encodeURIComponent('Anfrage EDM / Abfallberatung von ' + name);
-      const body = encodeURIComponent(
-        'Name: ' + name +
-        '\nFirma: ' + document.getElementById('company').value +
-        '\n\n' + message +
-        '\n\nE-Mail: ' + email
-      );
-
-      document.getElementById('formStatus').textContent = 'E-Mail-Client wird geöffnet …';
-      window.location.href = 'mailto:lp@ebpl.at?subject=' + subject + '&body=' + body;
-      return false;
-    }
-  </script>
 </body>
 </html>
-
